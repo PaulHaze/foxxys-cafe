@@ -2,12 +2,16 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/features/Header.astro';
 import Hero from '@/features/Hero.astro';
+import About from '@/features/About.astro';
 ---
 
 <Layout title="Foxxys Cafe Koh Phangnan">
-	<main class="flex min-h-screen flex-col">
-		<Header />
-		<Hero />
+	<main class="">
+		<div class="flex h-screen flex-col">
+			<Header />
+			<Hero />
+		</div>
+		<About />
 	</main>
 </Layout>
 
