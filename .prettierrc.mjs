@@ -6,7 +6,6 @@ export default {
 	tabWidth: 2,
 	trailingComma: 'es5',
 	useTabs: true,
-	// pluginSearchDirs: [__dirname],
 	plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
 	overrides: [
 		{
