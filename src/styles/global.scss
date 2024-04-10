@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+	* {
+		scroll-behavior: smooth;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		* {
+			scroll-behavior: auto;
+		}
+	}
 	h1 {
 		@apply text-4xl font-normal leading-normal;
 	}
