@@ -5,13 +5,13 @@ export function HamburgerLinks() {
 		<div className={styles.hamburgerLinks}>
 			<ul className="">
 				<li>
-					<a href="#about">About</a>
+					<a href="#about">ABOUT</a>
 				</li>
 				<li>
-					<a href="#menu">Menu</a>
+					<a href="#menu">MENU</a>
 				</li>
 				<li>
-					<a href="#contact">Contact</a>
+					<a href="#contact">CONTACT</a>
 				</li>
 			</ul>
 		</div>
