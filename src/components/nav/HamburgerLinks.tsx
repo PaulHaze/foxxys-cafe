@@ -1,6 +1,11 @@
+import type { Dispatch } from 'react';
 import styles from './navStyles.module.scss';
 
-export function HamburgerLinks() {
+type HamburgerLinksProps = {
+	setExpanded: Dispatch<React.SetStateAction<boolean>>;
+};
+
+export function HamburgerLinks({ setExpanded }: HamburgerLinksProps) {
 	return (
 		<div className={styles.hamburgerLinks}>
 			<ul className="">
