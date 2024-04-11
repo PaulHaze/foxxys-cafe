@@ -41,6 +41,9 @@ dependencies:
   react-scroll:
     specifier: ^1.9.0
     version: 1.9.0(react-dom@18.2.0)(react@18.2.0)
+  react-scroll-into-view:
+    specifier: ^2.1.2
+    version: 2.1.2(react-dom@18.2.0)(react@18.2.0)
   react-use:
     specifier: ^17.5.0
     version: 17.5.0(react-dom@18.2.0)(react@18.2.0)
@@ -5161,6 +5164,16 @@ packages:
   /react-refresh@0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /react-scroll-into-view@2.1.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7N2qFJjswi485q4Oohn92IWISqRT+Tl8VTMUhvFL1LzUGBYdiwOLXy3g16scddajyVBknHdJrzL04QL9gXCITQ==}
+    peerDependencies:
+      react: '>=16.5.2'
+      react-dom: '>=16.5.2'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-scroll@1.9.0(react-dom@18.2.0)(react@18.2.0):

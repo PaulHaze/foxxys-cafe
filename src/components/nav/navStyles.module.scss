@@ -2,7 +2,7 @@
 	ul {
 		@apply flex w-full flex-col items-center justify-center pb-2 text-sm text-white/80;
 		li {
-			@apply w-[50%] text-center hover:font-bold hover:text-white;
+			@apply w-[50%] cursor-pointer text-center hover:font-bold hover:text-white;
 			&:not(:last-child) {
 				@apply border-b border-stone-400/50;
 			}

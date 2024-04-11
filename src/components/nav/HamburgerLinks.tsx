@@ -1,4 +1,6 @@
 import type { Dispatch } from 'react';
+import ScrollIntoView from 'react-scroll-into-view';
+
 import styles from './navStyles.module.scss';
 
 type HamburgerLinksProps = {
@@ -8,15 +10,21 @@ type HamburgerLinksProps = {
 export function HamburgerLinks({ setExpanded }: HamburgerLinksProps) {
 	return (
 		<div className={styles.hamburgerLinks}>
-			<ul className="">
+			<ul className="" onClick={() => setExpanded(false)}>
 				<li>
-					<a href="#about">ABOUT</a>
+					<ScrollIntoView alignToTop={true} selector="#about">
+						<a>ABOUT</a>
+					</ScrollIntoView>
 				</li>
 				<li>
-					<a href="#menu">MENU</a>
+					<ScrollIntoView alignToTop={true} selector="#menu">
+						<a>MENU</a>
+					</ScrollIntoView>
 				</li>
 				<li>
-					<a href="#contact">CONTACT</a>
+					<ScrollIntoView alignToTop={true} selector="#contact">
+						<a>CONTACT</a>
+					</ScrollIntoView>
 				</li>
 			</ul>
 		</div>
