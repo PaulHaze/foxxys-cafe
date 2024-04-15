@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useCollapse } from 'react-collapsed';
-// import useClickAway from 'react-use/lib/useClickAway';
+import useClickAway from 'react-use/lib/useClickAway';
 
 import { Hamburger } from './Hamburger';
 import { HamburgerLinks } from './HamburgerLinks';
@@ -9,8 +9,8 @@ export function NavBar() {
 	const [isExpanded, setExpanded] = useState(false);
 	const { getCollapseProps } = useCollapse({ isExpanded });
 
-	// const ref = useRef(null);
-	// useClickAway(ref, () => setExpanded(false));
+	const ref = useRef(null);
+	useClickAway(ref, () => setExpanded(false));
 
 	return (
 		<div>
@@ -34,8 +34,10 @@ export function NavBar() {
 					<Hamburger isOpen={isExpanded} setOpen={setExpanded} />
 				</div>
 			</nav>
-			<div {...getCollapseProps()}>
-				<HamburgerLinks setExpanded={setExpanded} />
+			<div ref={ref}>
+				<div {...getCollapseProps()}>
+					<HamburgerLinks setExpanded={setExpanded} />
+				</div>
 			</div>
 		</div>
 	);
