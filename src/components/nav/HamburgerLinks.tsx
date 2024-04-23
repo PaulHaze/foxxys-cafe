@@ -1,5 +1,7 @@
+import { useRef, useEffect } from 'react';
 import type { Dispatch } from 'react';
 import ScrollIntoView from 'react-scroll-into-view';
+import { useIsVisible } from '@/hooks/useIsVisible';
 
 import styles from './navStyles.module.scss';
 
@@ -8,8 +10,16 @@ type HamburgerLinksProps = {
 };
 
 export function HamburgerLinks({ setExpanded }: HamburgerLinksProps) {
+	const ref = useRef<HTMLDivElement>(null);
+	const isVisible = useIsVisible(ref);
+	useEffect(() => {
+		if (!isVisible) {
+			setExpanded(false);
+		}
+	}, [isVisible]);
+
 	return (
-		<div className={styles.hamburgerLinks}>
+		<div ref={ref} className={styles.hamburgerLinks}>
 			<ul className="" onClick={() => setExpanded(false)}>
 				<li>
 					<ScrollIntoView alignToTop={true} selector="#about">
