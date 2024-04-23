@@ -15,7 +15,9 @@ export function NavBar() {
 	return (
 		<div>
 			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-white">
-				<div className="">LOGO</div>
+				<div ref={ref} className="">
+					LOGO
+				</div>
 
 				{/* DESKTOP LINKS */}
 				<ul className="hidden gap-x-4 sm:visible sm:flex">
@@ -34,7 +36,7 @@ export function NavBar() {
 					<Hamburger isOpen={isExpanded} setOpen={setExpanded} />
 				</div>
 			</nav>
-			<div ref={ref}>
+			<div>
 				<div {...getCollapseProps()}>
 					<HamburgerLinks setExpanded={setExpanded} />
 				</div>
