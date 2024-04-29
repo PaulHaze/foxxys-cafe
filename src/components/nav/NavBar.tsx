@@ -16,7 +16,7 @@ export function NavBar() {
 	});
 
 	return (
-		<div ref={ref}>
+		<div ref={ref} className="relative">
 			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-black/80">
 				<div>
 					<a href="/">
@@ -42,7 +42,7 @@ export function NavBar() {
 				</div>
 			</nav>
 			<div>
-				<div className="">
+				<div className="sm:hidden">
 					<div {...getCollapseProps()}>
 						<HamburgerLinks setExpanded={setExpanded} />
 					</div>

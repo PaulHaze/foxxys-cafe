@@ -13,8 +13,12 @@ import Location from '@/features/Location.astro';
 <Layout title="Foxxys Cafe Koh Phangnan">
 	<main class="">
 		<div class="flex h-screen flex-col">
-			<Header />
-			<Hero />
+			<div class="relative z-10">
+				<Header />
+			</div>
+			<div class="mt-[-64px]">
+				<Hero />
+			</div>
 		</div>
 		<About />
 		<CafeImage />
