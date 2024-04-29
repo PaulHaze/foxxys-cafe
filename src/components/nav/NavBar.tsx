@@ -5,6 +5,8 @@ import { useClickAway } from '@uidotdev/usehooks';
 import { Hamburger } from './Hamburger';
 import { HamburgerLinks } from './HamburgerLinks';
 
+import foxxyNavLogo from '@/assets/images/logo_blk_text_sm.png?url';
+
 export function NavBar() {
 	const [isExpanded, setExpanded] = useState(false);
 	const { getCollapseProps } = useCollapse({ isExpanded });
@@ -15,9 +17,11 @@ export function NavBar() {
 
 	return (
 		<div ref={ref}>
-			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-white">
+			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-black/80">
 				<div>
-					<a href="/">LOGO</a>
+					<a href="/">
+						<img className="h-12" src={foxxyNavLogo} alt="Foxxy Logo" />
+					</a>
 				</div>
 
 				{/* DESKTOP LINKS */}

@@ -9,11 +9,6 @@ type HamburgerProps = {
 
 export function Hamburger({ isOpen, setOpen }: HamburgerProps) {
 	return (
-		<Fade
-			color="rgba(255,255,255,0.5)"
-			size={24}
-			toggled={isOpen}
-			toggle={setOpen}
-		/>
+		<Fade color="rgba(0,0,0,0.8)" size={24} toggled={isOpen} toggle={setOpen} />
 	);
 }
