@@ -29,6 +29,7 @@
 		"react-scroll-into-view": "^2.1.2",
 		"react-use": "^17.5.0",
 		"sass": "^1.74.1",
+		"sharp": "^0.32.6",
 		"tailwindcss": "^3.4.3",
 		"typescript": "^5.4.5"
 	},

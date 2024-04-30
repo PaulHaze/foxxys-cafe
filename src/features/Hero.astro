@@ -1,6 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '@/assets/images/foxxy_main_bg.jpg';
+---
+
 <section
 	id="hero"
 	class="z-0 flex h-screen items-center justify-center bg-blue-400"
 >
-	<h1 class="font-bold text-white">HERO PLACE HOLDER</h1>
+	<Image src={heroImage} alt="Foxxy cafe hero image" />
 </section>
