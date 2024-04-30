@@ -16,7 +16,7 @@ export function NavBar() {
 	});
 
 	return (
-		<div ref={ref} className="relative bg-white/30 backdrop-blur">
+		<div ref={ref} className="relative bg-white/40 backdrop-blur-lg">
 			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-black/80">
 				<div>
 					<a href="/">
@@ -42,7 +42,7 @@ export function NavBar() {
 				</div>
 			</nav>
 			<div>
-				<div className="absolute w-full backdrop-blur sm:hidden">
+				<div className="absolute w-full backdrop-blur-lg sm:hidden">
 					<div {...getCollapseProps()}>
 						<HamburgerLinks setExpanded={setExpanded} />
 					</div>

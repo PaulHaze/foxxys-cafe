@@ -1,6 +1,6 @@
 .hamburgerLinks {
 	ul {
-		@apply flex w-full flex-col items-center justify-center bg-white/30 pb-2 text-sm text-black/80;
+		@apply flex w-full flex-col items-center justify-center bg-white/40 pb-2 text-sm text-black/80;
 		li {
 			@apply w-[50%] cursor-pointer text-center hover:font-bold hover:text-black;
 			&:not(:last-child) {
