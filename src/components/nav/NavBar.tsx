@@ -16,14 +16,11 @@ export function NavBar() {
 	});
 
 	return (
-		<div ref={ref} className="relative bg-white/40 backdrop-blur-lg">
+		<div ref={ref} className="relative bg-white/40 backdrop-blur">
 			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-black/80">
-				<div>
-					<a href="/">
-						<img className="h-12" src={foxxyNavLogo} alt="Foxxy Logo" />
-					</a>
-				</div>
-
+				<a href="/">
+					<img className="h-12" src={foxxyNavLogo} alt="Foxxy Logo" />
+				</a>
 				{/* DESKTOP LINKS */}
 				<ul className="hidden gap-x-4 sm:visible sm:flex">
 					<li>
@@ -41,11 +38,9 @@ export function NavBar() {
 					<Hamburger isOpen={isExpanded} setOpen={setExpanded} />
 				</div>
 			</nav>
-			<div>
-				<div className="absolute w-full backdrop-blur-lg sm:hidden">
-					<div {...getCollapseProps()}>
-						<HamburgerLinks setExpanded={setExpanded} />
-					</div>
+			<div className="absolute w-full backdrop-blur sm:hidden">
+				<div {...getCollapseProps()}>
+					<HamburgerLinks setExpanded={setExpanded} />
 				</div>
 			</div>
 		</div>
