@@ -38,6 +38,9 @@
 	.bb2 {
 		@apply border border-green-600 sm:border-red-600 md:border-blue-600 lg:border-pink-600;
 	}
+	.bb3 {
+		@apply border-4 border-green-600 sm:border-red-600 md:border-blue-600 lg:border-pink-600;
+	}
 	.flex-center {
 		@apply flex items-center justify-center;
 	}

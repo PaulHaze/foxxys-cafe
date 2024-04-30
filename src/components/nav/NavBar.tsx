@@ -19,7 +19,11 @@ export function NavBar() {
 		<div ref={ref} className="relative bg-white/40 backdrop-blur">
 			<nav className="mx-auto flex h-[64px] w-full max-w-lg items-center justify-between px-6 text-black/80">
 				<a href="/">
-					<img className="h-12" src={foxxyNavLogo} alt="Foxxy Logo" />
+					<img
+						className="h-12 opacity-80"
+						src={foxxyNavLogo}
+						alt="Foxxy Logo"
+					/>
 				</a>
 				{/* DESKTOP LINKS */}
 				<ul className="hidden gap-x-4 sm:visible sm:flex">
