@@ -20,10 +20,7 @@ export function HamburgerLinks({ setExpanded }: HamburgerLinksProps) {
 
 	return (
 		<div ref={ref} className={styles.hamburgerLinks}>
-			<ul
-				className="absolute bg-transparent"
-				onClick={() => setExpanded(false)}
-			>
+			<ul onClick={() => setExpanded(false)}>
 				<li>
 					<ScrollIntoView alignToTop={true} selector="#about">
 						<a>ABOUT</a>

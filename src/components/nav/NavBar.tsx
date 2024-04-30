@@ -42,7 +42,7 @@ export function NavBar() {
 				</div>
 			</nav>
 			<div>
-				<div className="sm:hidden">
+				<div className="absolute w-full sm:hidden">
 					<div {...getCollapseProps()}>
 						<HamburgerLinks setExpanded={setExpanded} />
 					</div>
