@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 import plugin from 'tailwindcss/plugin';
+import { transform } from 'typescript';
 
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -71,12 +72,20 @@ export default {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			animation: {
-				fadeIn: 'fadeIn 2s ease-in',
+				fadeInUp: 'fadeIn 1.5s ease-in-out, slideUp 1.5s ease-out',
 			},
 			keyframes: {
 				fadeIn: {
-					'0%': { opacity: 0 },
-					'100%': { opacity: 1 },
+					'0%': {
+						opacity: 0,
+					},
+					'100%': { opacity: 0.8 },
+				},
+				slideUp: {
+					'0%': {
+						transform: 'translateY(10%)',
+					},
+					'100%': { transform: 'translateY(0)' },
 				},
 			},
 		},
