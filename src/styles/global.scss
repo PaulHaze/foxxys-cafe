@@ -46,6 +46,56 @@
 	}
 }
 
-.text-red {
-	@apply text-red-600;
+.fade {
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.slide-up {
+	transform: translateY(30%);
+	animation-name: slideUp;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.fade-up {
+	transform: translateY(30%);
+	opacity: 0;
+	animation-name: fadeInSlideUp;
+	animation-duration: 1.5s;
+	// animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.8;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(30%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInSlideUp {
+	from {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+	to {
+		opacity: 0.8;
+		transform: translateY(0);
+	}
 }
