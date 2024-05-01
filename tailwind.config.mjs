@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 import plugin from 'tailwindcss/plugin';
-import { transform } from 'typescript';
 
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -91,7 +90,7 @@ export default {
 		},
 	},
 	plugins: [
-		plugin(({ addUtilities }) => {
+		plugin(({ addUtilities, matchUtilities, theme }) => {
 			addUtilities({
 				'.flex-center': {
 					display: 'flex',
@@ -138,6 +137,18 @@ export default {
 					},
 				},
 			});
+			matchUtilities(
+				{
+					'animation-delay': (value) => {
+						return {
+							'animation-delay': value,
+						};
+					},
+				},
+				{
+					values: theme('transitionDelay'),
+				}
+			);
 		}),
 	],
 };
