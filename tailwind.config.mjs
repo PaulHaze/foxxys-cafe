@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 import plugin from 'tailwindcss/plugin';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -41,6 +42,9 @@ export default {
 			center: true,
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+			},
 			minWidth: {
 				xs: '431px',
 				sm: '640px',
