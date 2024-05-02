@@ -23,6 +23,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.24
         version: 18.3.0
+      '@types/rellax':
+        specifier: ^1.7.7
+        version: 1.7.7
       '@uidotdev/usehooks':
         specifier: ^2.4.1
         version: 2.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -53,6 +56,9 @@ importers:
       react-use:
         specifier: ^17.5.0
         version: 17.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      rellax:
+        specifier: ^1.12.1
+        version: 1.12.1
       sass:
         specifier: ^1.74.1
         version: 1.75.0
@@ -65,6 +71,9 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
+      ukiyojs:
+        specifier: ^4.2.0
+        version: 4.2.0
     devDependencies:
       '@typescript-eslint/parser':
         specifier: ^7.5.0
@@ -772,6 +781,9 @@ packages:
 
   '@types/react@18.3.1':
     resolution: {integrity: sha512-V0kuGBX3+prX+DQ/7r2qsv1NsdfnCLnTgnRJ1pYnxykBhGMz+qj+box5lq7XsO5mtZsBqpjwwTu/7wszPfMBcw==}
+
+  '@types/rellax@1.7.7':
+    resolution: {integrity: sha512-I/gX5eNLEh7J7CkC10EbJnleOKqza47Zt7znVefU8M2+CvtD1L5TVNesFwC9HTzDhe4Rw8+82ykzJyf5R13UTw==}
 
   '@types/tar@6.1.13':
     resolution: {integrity: sha512-IznnlmU5f4WcGTh2ltRu/Ijpmk8wiWXfF0VA4s+HPjHZgvFggk1YaIkbo5krX/zUCzWF8N/l4+W/LNxnvAJ8nw==}
@@ -2807,6 +2819,9 @@ packages:
   rehype@13.0.1:
     resolution: {integrity: sha512-AcSLS2mItY+0fYu9xKxOu1LhUZeBZZBx8//5HKzF+0XP+eP8+6a5MXn2+DW2kfXR6Dtp1FEXMVrjyKAcvcU8vg==}
 
+  rellax@1.12.1:
+    resolution: {integrity: sha512-XBIi0CDpW5FLTujYjYBn1CIbK2CJL6TsAg/w409KghP2LucjjzBjsujXDAjyBLWgsfupfUcL5WzdnIPcGfK7XA==}
+
   remark-gfm@4.0.0:
     resolution: {integrity: sha512-U92vJgBPkbw4Zfu/IiW2oTZLSL3Zpv+uI7My2eq8JxKgqraFdU8YUGicEJCEgSbeaG+QDFqIcwwfMTOEelPxuA==}
 
@@ -3235,6 +3250,10 @@ packages:
 
   ufo@1.5.3:
     resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
+
+  ukiyojs@4.2.0:
+    resolution: {integrity: sha512-Y3rmK+Kdq4JooPk1mEsYIOFUOlH6uDZm4NGQW37knbPlFgV9WmMmsYuimnBsubd++gLrfDPKzqEzz1rg5lMAbQ==}
+    engines: {node: '>=16'}
 
   ultrahtml@1.5.3:
     resolution: {integrity: sha512-GykOvZwgDWZlTQMtp5jrD4BVL+gNn2NVlVafjcFUJ7taY20tqYdwdoWBFy6GBJsNTZe1GkGPkSl5knQAjtgceg==}
@@ -4198,6 +4217,8 @@ snapshots:
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
+
+  '@types/rellax@1.7.7': {}
 
   '@types/tar@6.1.13':
     dependencies:
@@ -6685,6 +6706,8 @@ snapshots:
       rehype-stringify: 10.0.0
       unified: 11.0.4
 
+  rellax@1.12.1: {}
+
   remark-gfm@4.0.0:
     dependencies:
       '@types/mdast': 4.0.3
@@ -7249,6 +7272,8 @@ snapshots:
   typescript@5.4.5: {}
 
   ufo@1.5.3: {}
+
+  ukiyojs@4.2.0: {}
 
   ultrahtml@1.5.3: {}
 

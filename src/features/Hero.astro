@@ -10,7 +10,8 @@ import heroLogo from '@/assets/images/logo_blk_lg.png';
 	>
 		<!-- LOGO -->
 		<div
-			class="animate-fadeInUp w-[40%] opacity-80 sm:pt-20 md:ml-10 md:w-[35%]"
+			data-rellax-speed="2"
+			class="hero-logo w-[40%] animate-fadeInUp opacity-80 sm:pt-20 md:ml-10 md:w-[35%]"
 		>
 			<Image src={heroLogo} alt="Foxxy cafe hero logo" />
 		</div>
@@ -20,12 +21,12 @@ import heroLogo from '@/assets/images/logo_blk_lg.png';
 		>
 			<div class="flex flex-col">
 				<h1
-					class="fade-up animation-delay-700 font-semibold text-slate-800 opacity-80 sm:text-5xl md:text-5xl"
+					class="fade-up font-semibold text-slate-800 opacity-80 animation-delay-700 sm:text-5xl md:text-5xl"
 				>
 					A Taste Of Paradise
 				</h1>
 				<p
-					class="fade-up animation-delay-1000 text-slate-800 sm:pt-4 sm:text-2xl"
+					class="fade-up text-slate-800 animation-delay-1000 sm:pt-4 sm:text-2xl"
 				>
 					(or any other blurb)
 				</p>
@@ -38,3 +39,20 @@ import heroLogo from '@/assets/images/logo_blk_lg.png';
 		alt="Foxxy cafe hero image"
 	/>
 </section>
+
+<script>
+	// import Ukiyo from 'ukiyojs';
+	import Rellax from 'rellax';
+
+	// eslint-disable-next-line no-unused-vars
+	var heroLogo = new Rellax('.hero-logo');
+	// const parallax = document.querySelector('.hero');
+
+	// new Ukiyo(parallax, {
+	// 	scale: 1.5, // 1~2 is recommended
+	// 	speed: 1.5, // 1~2 is recommended
+	// 	willChange: true,
+	// 	wrapperClass: 'ukiyo-wrapper',
+	// 	externalRAF: false,
+	// });
+</script>
