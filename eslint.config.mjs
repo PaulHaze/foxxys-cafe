@@ -80,7 +80,7 @@ export default [
 	{
 		name: 'typescript-eslint/recommended',
 		rules: {
-			'@typescript-eslint/ban-ts-comment': 'error',
+			'@typescript-eslint/ban-ts-comment': 'off',
 			'@typescript-eslint/ban-types': 'error',
 			'no-array-constructor': 'off',
 			'@typescript-eslint/no-array-constructor': 'error',

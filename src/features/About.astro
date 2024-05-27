@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
-import palmLogo from '@/assets/images/palm_logo_white_bg.jpg';
+import palmLogo from '@/assets/images/palm_logo_black.png';
 ---
 
 <section
 	id="about"
-	class="contain relative mx-auto flex items-center justify-start overflow-hidden bg-slate-50"
+	class="relative mx-auto flex items-center justify-start overflow-hidden bg-slate-50"
 >
-	<div class="mx-auto my-20 max-w-md space-y-5 px-10 md:pl-0">
+	<div class="mx-auto my-20 max-w-md space-y-5 px-10">
 		<p class="font-semibold tracking-widest text-[#A95F3B]">
 			BREAKFAST • LUNCH • VIBES
 		</p>
@@ -27,7 +27,7 @@ import palmLogo from '@/assets/images/palm_logo_white_bg.jpg';
 	</div>
 	<Image
 		src={palmLogo}
-		alt="A very cool penguin!"
-		class="absolute mx-auto h-full w-full max-w-lg object-cover opacity-5 sm:right-[-50px] md:top-0"
+		alt="Foxy palm logo"
+		class="w-automax-w-lg absolute right-[-270px] mx-auto h-3/4 object-contain opacity-5 sm:right-[-150px] md:right-[-50px]"
 	/>
 </section>
