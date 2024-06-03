@@ -8,7 +8,7 @@
 		"check": "astro check",
 		"watch": "astro check --watch",
 		"build": "astro build",
-		"check:build": "astro check and astro build",
+		"check:build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
@@ -35,7 +35,7 @@
 		"react-use": "^17.5.0",
 		"rellax": "^1.12.1",
 		"sass": "^1.77.2",
-		"sharp": "^0.33.4",
+		"sharp": "^0.32.6",
 		"tailwindcss": "^3.4.3",
 		"typescript": "^5.4.5",
 		"ukiyojs": "^4.2.0"
