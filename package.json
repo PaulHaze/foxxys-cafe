@@ -8,7 +8,7 @@
 		"check": "astro check",
 		"watch": "astro check --watch",
 		"build": "astro build",
-		"check:build": "astro check and astro build",
+		"check:build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
